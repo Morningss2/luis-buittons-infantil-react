@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --brand-primary: #5C3D2E;
+  --brand-accent: #A37A58;
+  --bg-main: #FAF7F2;
+  --bg-light: #F3EDE4;
+  --text-main: #2B1F18;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+  min-height: 76px;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: var(--brand-primary) !important;
+}
+
+.nav-link {
+  color: var(--brand-primary) !important;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.55;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+h2 {
+  letter-spacing: 0.3px;
+}
+
+/* BOTÕES */
+.btn {
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.btn-dark {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-dark:hover {
+  background-color: #4a3125;
+  border-color: #4a3125;
+}
+
+.btn-light {
+  color: var(--brand-primary);
+}
+
+.btn-light:hover {
+  background-color: #f0ebe3;
+}
+
+/* CARDS */
+.card {
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+/* SEÇÕES */
+#infantil {
+  background-color: #ffffff;
+}
+
+#infantil h2 {
+  color: var(--brand-primary);
+}
+
+#destaques {
+  background-color: var(--bg-light);
+}
+
+#chamada-final {
+  background-color: var(--brand-primary);
+}
+
+a {
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #infantil {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #infantil img {
+    height: 300px !important;
+  }
+}
